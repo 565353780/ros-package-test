@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <arg name="robot_num" type = "int" default="1"/>
+
+    <node name="tf_publisher" pkg="gsm_topic_sync" type="gsm_topic_sync" output="screen"
+        args="$(arg robot_num)"/>
+        
+</launch>
